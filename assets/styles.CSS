@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Allison&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root
+{
+--pinkButtons:#F297C0;
+--violet:#330D34;
+--beighe: #DAB785;
+
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--violet); 
+}
+
+
+/********* Header **********/
+header
+{
+    /* background: url("../img/pointes.jpg") center no-repeat; */
+    /* background: rgb(41,22,39),
+     linear-gradient(0deg, rgba(41,22,39,1) 0%, rgba(178,105,165,0.75) 50%, rgba(252,133,234,0.05) 100%), url("../img/pointes.jpg") ; */
+
+    /* background-image:  url("../img/pointes.jpg"), url("../img/Gradient.png") ; */
+
+    background: url(../img/background-header.png) center no-repeat;
+    /* url("../img/pointes.jpg"), */
+   
+    background-size: cover;
+    min-height:95vh;
+
+
+    /* background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+    url("../img/pointes.jpg") center no-repeat ; */
+}
+
+h1
+{
+    font-family: "Allison", cursive;
+    font-size: 7rem;
+    color: rgb(76, 7, 95);
+    color: radial-gradient(circle, rgb(194, 51, 213) 27%, rgba(255,211,156,1) 75%);
+}
+
+.search
+{
+    border: .1rem solid rgba(255, 239, 200, 0.862);
+    background-color: transparent;
+    border-radius: 3rem;
+    padding: .2rem;
+}
+
+.search[placeholder]
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--violet); 
+    font-size: .9rem;
+    padding: .3rem;
+}
+
+
+button
+{
+    background-color: var(--pinkButtons);
+    padding: .5rem 2rem;
+    border-radius: 3rem;
+    border: none;
+    box-shadow:2px 2px 4px 2px rgba(211, 193, 133, 0.467);
+    color: beige;
+    margin: 0 1rem;
+}
+
+.IF
+{
+    font-family: "Playfair Display", serif;
+    text-decoration: none;
+    padding:0 .5rem;
+    font-size: 1.5rem;
+    color: #330D34;
+}
+.IF span
+{
+    font-size: 2rem;
+    color: #F297C0;
+}
+
+
+hr
+{
+    width: 1.5rem;
+}
+
+.header-text
+{
+    margin-top: 5rem;
+    width: 100vh;
+    padding:5rem;
+    height: 50vh;
+}
+.header-text p
+{
+    font-size: .7rem;
+    letter-spacing: 2;
+    width: 70%;
+    text-align: center;
+}
+
+.nav-header
+{
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-button
+{
+    display: flex;
+    align-items: center;
+}
+
+.search-button hr
+{
+    transform: translateX(-25px);
+    border: 1px solid antiquewhite;
+}
+
+.bas-header
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem;
+}
+
+.social
+{
+    display:column;
+    width: 2rem; 
+    color:var(--beighe) ;
+}
+
+.bi-google::before
+{
+    padding: 2rem auto;
+}
+
+a
+{
+    text-decoration: none;
+    color: var(--pinkButtons);
+}
+
+
+
+
+.scroll-hr
+{
+    display: flex ;
+    width: 2rem;
+    hr 
+    {
+        border: 1px solid beige;
+    }
+}
+.scroll
+{
+    transform: rotate(90deg) translateX(-55px) translateY(-7px);
+}
+
+/* ******* Main  *******/
+h2
+{
+    font-family: "Aboreto", system-ui; 
+    color: white;
+    margin: 1.5rem auto;
+}
+
+.nav-bar ul
+{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+.nav-bar a
+{
+     padding: 2rem 2rem;
+}
+
+/* section */
+.container
+{
+    display: flex;
+}
+Img
+{
+    width: 50%;
+}

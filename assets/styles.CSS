@@ -7,7 +7,7 @@
 {
 --pinkButtons:#F297C0;
 --violet:#330D34;
---beighe: #DAB785;
+--beige: #DAB785;
 
 }
 
@@ -65,7 +65,7 @@ h1
 .search[placeholder]
 {
     font-family: Arial, Helvetica, sans-serif;
-    color: var(--beighe); 
+    color:var(--beige); 
     font-size: .9rem;
     padding: .3rem;
 }
@@ -352,16 +352,24 @@ footer
 
     .share
     {
-        align-items: center;
-        padding: 1.5rem;
+        display: flex;
     }
+    .share i
+    {
+        padding: 0 .5rem;
+        margin: .5rem;
+    }
+    i:hover 
+    {
+        color: #F297C0;
+    }
+
     .content-footer 
     {
         margin: 0 auto;
         display: flex;
-        align-items: center;
-        justify-content: center;
 
+        justify-content: center;
 
         ul
         {
@@ -393,5 +401,12 @@ footer
         }
 
     }
-        
+    div 
+    {
+        text-align: center;
+    }
+    .IF
+    {
+        color: #DAB785;
+    }
 }

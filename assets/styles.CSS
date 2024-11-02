@@ -65,7 +65,7 @@ h1
 .search[placeholder]
 {
     font-family: Arial, Helvetica, sans-serif;
-    color: var(--violet); 
+    color: var(--beighe); 
     font-size: .9rem;
     padding: .3rem;
 }
@@ -120,16 +120,17 @@ hr
 
 .nav-header
 {
-    padding: 3rem;
+    padding: 2rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .search-button
 {
     display: flex;
     align-items: center;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 .search-button hr
@@ -183,7 +184,15 @@ a
 
 main
 {
-    margin:2rem;
+    background: url(../img/BG-LIGHTS.png);
+    background-size: cover;
+    min-height:95vh;
+   
+}
+
+section
+{
+    padding: 2rem 0;
 }
 h2
 {
@@ -239,6 +248,7 @@ h2
         max-width:60vh;
         overflow: hidden;
         padding: 4rem;
+        
     }
     .Img
     {
@@ -246,6 +256,8 @@ h2
         object-fit: contain;
         width: 100%;
         margin: 0 auto;
+        /* border: .5em dotted var(--pinkButtons); */
+        /* border-style: none dotted none none; */
     }
     .Img:hover
     {
@@ -300,9 +312,8 @@ p
     /* border: 1px solid green; */
     display: flex;
     max-width:75vh; 
-    /* max-height: 75%;  */
-    /* height: auto; */
     flex-wrap: wrap;
+    transition: .5s ease ;
 
     img 
     {
@@ -310,4 +321,77 @@ p
         width: 35vh;
         height: 35vh;
     }
+    img:hover
+    {
+        transform: scale(1.1); 
+    }
+}
+
+.dashed
+{
+    border-style: dotted none none;
+    width: 300px;
+    border-width: .4em;
+    color: #F297C0;
+    padding: .2rem;
+    transform: translateX(-50px);
+}
+
+
+/* applying violet shadow to non-hovered images
+* add the button en absolute position into the image (le parent doit etre relatif)
+* footer
+* the header nav
+
+
+/* *************FOOTER*********************** */
+
+footer
+{
+    padding: 3rem;
+
+    .share
+    {
+        align-items: center;
+        padding: 1.5rem;
+    }
+    .content-footer 
+    {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        ul
+        {
+            padding: 2rem;  
+        }
+
+        li
+        {
+            list-style-type: none;
+            padding: 1rem;
+            text-align: center;
+        }
+        a 
+        {
+            color: aliceblue;
+            
+        }
+        h4 
+        {
+            color: #F297C0;
+            font-weight: 1rem;
+            padding: 2rem;
+            text-align: center;
+           
+        }
+        h4:hover 
+        {
+            border-bottom: .01rem solid var(--pinkButtons);
+        }
+
+    }
+        
 }

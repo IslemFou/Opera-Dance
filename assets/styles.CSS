@@ -3,32 +3,28 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Allison&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-:root
-{
---pinkButtons:#F297C0;
---violet:#330D34;
---beige: #DAB785;
+:root {
+    --pinkButtons: #F297C0;
+    --violet: #330D34;
+    --beige: #DAB785;
 
 }
 
-*
-{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body
-{
+body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--violet); 
+    background-color: var(--violet);
     color: white;
 }
 
 
 /********* Header **********/
-header
-{
+header {
     /* background: url("../img/pointes.jpg") center no-repeat; */
     /* background: rgb(41,22,39),
      linear-gradient(0deg, rgba(41,22,39,1) 0%, rgba(178,105,165,0.75) 50%, rgba(252,133,234,0.05) 100%), url("../img/pointes.jpg") ; */
@@ -37,173 +33,162 @@ header
 
     background: url(../img/background-header.png) center no-repeat;
     /* url("../img/pointes.jpg"), */
-   
+
     background-size: cover;
-    min-height:95vh;
+    min-height: 95vh;
 
 
     /* background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
     url("../img/pointes.jpg") center no-repeat ; */
 }
 
-h1
-{
+h1 {
     font-family: "Allison", cursive;
     font-size: 7rem;
     color: rgb(76, 7, 95);
-    color: radial-gradient(circle, rgb(194, 51, 213) 27%, rgba(255,211,156,1) 75%);
+    color: radial-gradient(circle, rgb(194, 51, 213) 27%, rgba(255, 211, 156, 1) 75%);
 }
 
-.search
-{
+.search {
     border: .1rem solid rgba(255, 239, 200, 0.862);
     background-color: transparent;
     border-radius: 3rem;
     padding: .2rem;
 }
 
-.search[placeholder]
-{
+.search[placeholder] {
     font-family: Arial, Helvetica, sans-serif;
-    color:var(--beige); 
+    color: var(--beige);
     font-size: .9rem;
     padding: .3rem;
+    height: 2.5rem;
 }
 
 
-button
-{
+button {
     background-color: var(--pinkButtons);
     padding: .7rem 2rem;
     border-radius: 3rem;
     border: none;
-    box-shadow:2px 2px 4px 2px rgba(211, 193, 133, 0.467);
+    box-shadow: 2px 2px 4px 2px rgba(211, 193, 133, 0.467);
     color: var(--violet);
     text-transform: uppercase;
     margin: 3rem .9rem;
+    transition: .5s ease;
 }
 
-.IF
-{
+button:hover {
+    transform: scale(1.1);
+}
+
+.IF {
     font-family: "Playfair Display", serif;
     text-decoration: none;
-    padding:0 .5rem;
+    padding: 0 .5rem;
     font-size: 1.5rem;
     color: #330D34;
 }
-.IF span
-{
+
+.IF span {
     font-size: 2rem;
     color: #F297C0;
 }
 
 
-hr
-{
+hr {
     width: 1.5rem;
 }
 
-.header-text
-{
+.header-text {
     margin-top: 5rem;
     width: 100vh;
-    padding:5rem;
+    padding: 5rem;
     height: 50vh;
 }
-.header-text p
-{
+
+.header-text p {
     font-size: .7rem;
     letter-spacing: 2;
     width: 70%;
     text-align: center;
 }
 
-.nav-header
-{
+.nav-header {
     padding: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.search-button
-{
+.search-button {
     display: flex;
     align-items: center;
     /* margin: 0 auto; */
 }
 
-.search-button hr
-{
+.search-button hr {
     transform: translateX(-25px);
     border: 1px solid antiquewhite;
 }
 
-.bas-header
-{
+.bas-header {
     display: flex;
     justify-content: space-between;
     margin: 3rem;
 }
 
-.social
-{
-    display:column;
+.social {
+    display: column;
     justify-content: space-between;
-    width: 2rem; 
-    color:var(--beighe) ;
+    width: 2rem;
+    color: var(--beighe);
     transform: translateY(-50px);
-    a
-    {
+
+    a {
         color: var(--beighe);
     }
 }
 
-a
-{
+a {
     text-decoration: none;
     color: var(--pinkButtons);
 }
 
 
-.scroll-hr
-{
-    display: flex ;
+.scroll-hr {
+    display: flex;
     width: 2rem;
-    hr 
-    {
+
+    hr {
         border: 1px solid beige;
     }
 }
-.scroll
-{
+
+.scroll {
     transform: rotate(90deg) translateX(-55px) translateY(-7px);
 }
 
 /* ******* Main  *******/
 
-main
-{
+main {
     background: url(../img/BG-LIGHTS.png);
     background-size: cover;
-    min-height:95vh;
-   
+    min-height: 95vh;
+
 }
 
-section
-{
+section {
     padding: 2rem 0;
 }
-h2
-{
-    font-family: "Aboreto", system-ui; 
+
+h2 {
+    font-family: "Aboreto", system-ui;
     color: white;
-    margin:2rem;
+    margin: 2rem;
     font-size: 2rem;
 }
 
-.nav-bar ul
-{
+.nav-bar ul {
     display: flex;
     justify-content: space-around;
     text-decoration: none;
@@ -211,93 +196,82 @@ h2
     margin: 0 auto;
     border-bottom: .1px solid #815066;
     width: 70%;
-    a 
-    {
-        color:#7b5a7c;
+
+    a {
+        color: #7b5a7c;
         padding-bottom: 2rem;
     }
-    a:hover 
-    {
+
+    a:hover {
         color: var(--pinkButtons);
         border-bottom: 3px solid var(--pinkButtons);
         border-radius: 3px;
     }
 }
 
-.nav-bar li
-{
-     padding: 2rem;
-     align-items: center;
-     text-align: center;
+.nav-bar li {
+    padding: 2rem;
+    align-items: center;
+    text-align: center;
 }
 
 /* section 1 */
-.container
-{
+.contenaire {
     display: flex;
-    justify-content:space-between;
-    
-    /* border: 2px solid rgb(81, 0, 255); */
+    justify-content: space-between;
     padding: 0 4rem;
     align-items: center;
     margin: 0 4rem;
 
-    .contain-img
-    {
-        /* border: 2px solid yellow; */
-        max-width:60vh;
+    .contain-img {
+        max-width: 60vh;
         overflow: hidden;
         padding: 4rem;
-        
     }
-    .Img
-    {
-        transition: .5s ease ;
+
+    .Img {
+        transition: .5s ease;
         object-fit: contain;
         width: 100%;
         margin: 0 auto;
         /* border: .5em dotted var(--pinkButtons); */
         /* border-style: none dotted none none; */
     }
-    .Img:hover
-    {
-        transform: scale(1.1);  
+
+    .Img:hover {
+        transform: scale(1.1);
     }
 
-    .our-classes
-    {
+    .our-classes {
         width: 45%;
         margin: 0 auto;
     }
 }
 
 
-    
- .search-button
-    {
-        align-items: center;
-        justify-content: center;
-    }
 
-p 
-    {
-        text-align: center;
-        letter-spacing: 1px;
-        text-justify:distribute-all-lines;
-    }
+.search-button {
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    text-align: center;
+    letter-spacing: 1px;
+    text-justify: distribute-all-lines;
+}
 
 /* Section 2 */
 
-.global-contain
-{
+.global-contain {
     display: flex;
-    
+
     align-items: center;
     margin: 0 6rem;
     /* border: 2px solid blue; */
     justify-content: center;
-    .Apropos
-    {
+
+    .Apropos {
         padding: 4rem;
         width: 45%;
         align-items: center;
@@ -307,106 +281,90 @@ p
 
 
 
-.bloc-images
-{
+.bloc-images {
     /* border: 1px solid green; */
     display: flex;
-    max-width:75vh; 
+    max-width: 75vh;
     flex-wrap: wrap;
-    transition: .5s ease ;
+    transition: .5s ease;
 
-    img 
-    {
+    img {
         object-fit: cover;
         width: 35vh;
         height: 35vh;
     }
-    img:hover
-    {
-        transform: scale(1.1); 
+
+    img:hover {
+        transform: scale(1.1);
     }
 }
 
-.dashed
-{
+.dashed {
     border-style: dotted none none;
     width: 300px;
-    border-width: .4em;
+    border-width: .4rem;
     color: #F297C0;
-    padding: .2rem;
+    /* padding: .2rem; */
     transform: translateX(-50px);
 }
 
-
-/* applying violet shadow to non-hovered images
-* add the button en absolute position into the image (le parent doit etre relatif)
-* footer
-* the header nav
-
-
 /* *************FOOTER*********************** */
 
-footer
-{
+footer {
     padding: 3rem;
 
-    .share
-    {
+    .share {
         display: flex;
+        justify-content: center;
     }
-    .share i
-    {
+
+    .share li {
         padding: 0 .5rem;
         margin: .5rem;
     }
-    i:hover 
-    {
+
+    .share a:hover {
         color: #F297C0;
     }
 
-    .content-footer 
-    {
+    .content-footer {
         margin: 0 auto;
         display: flex;
-
-        justify-content: center;
-
-        ul
-        {
-            padding: 2rem;  
-        }
-
-        li
-        {
-            list-style-type: none;
-            padding: 1rem;
-            text-align: center;
-        }
-        a 
-        {
-            color: aliceblue;
-            
-        }
-        h4 
-        {
-            color: #F297C0;
-            font-weight: 1rem;
-            padding: 2rem;
-            text-align: center;
-           
-        }
-        h4:hover 
-        {
-            border-bottom: .01rem solid var(--pinkButtons);
-        }
-
+        justify-content: space-around;
     }
-    div 
-    {
+
+    li {
+        list-style-type: none;
+        padding: 1rem;
         text-align: center;
     }
-    .IF
-    {
+
+    a {
+        color: aliceblue;
+    }
+
+    a:hover {
+        color: var(--pinkButtons);
+    }
+
+    .li-title {
+        color: #F297C0;
+        font-weight: bold;
+        padding: 2rem;
+        text-align: center;
+
+    }
+
+    .li-title:hover {
+        border-bottom: .01rem solid var(--pinkButtons);
+    }
+
+    div {
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .IF {
         color: #DAB785;
     }
 }

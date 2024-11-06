@@ -3,6 +3,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Allison&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
+
+/* radial gradiant rose-beige
+    background: rgb(242, 151, 192);
+    background: linear-gradient(45deg, rgba(242, 151, 192, 1) 16%, rgba(255, 211, 156, 1) 72%); */
+
+
+
 :root {
     --pinkButtons: #F297C0;
     --violet: #330D34;
@@ -25,28 +32,19 @@ body {
 
 /********* Header **********/
 header {
-    /* background: url("../img/pointes.jpg") center no-repeat; */
-    /* background: rgb(41,22,39),
-     linear-gradient(0deg, rgba(41,22,39,1) 0%, rgba(178,105,165,0.75) 50%, rgba(252,133,234,0.05) 100%), url("../img/pointes.jpg") ; */
-
-    /* background-image:  url("../img/pointes.jpg"), url("../img/Gradient.png") ; */
 
     background: url(../img/background-header.png) center no-repeat;
-    /* url("../img/pointes.jpg"), */
-
     background-size: cover;
     min-height: 95vh;
 
-
-    /* background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
-    url("../img/pointes.jpg") center no-repeat ; */
 }
+
 
 h1 {
     font-family: "Allison", cursive;
     font-size: 7rem;
-    color: rgb(76, 7, 95);
-    color: radial-gradient(circle, rgb(194, 51, 213) 27%, rgba(255, 211, 156, 1) 75%);
+    color: rgb(242, 151, 192);
+    color: linear-gradient(45deg, rgba(242, 151, 192, 1) 16%, rgba(255, 211, 156, 1) 45%);
 }
 
 .search {
@@ -96,14 +94,16 @@ button:hover {
 
 
 hr {
-    width: 1.5rem;
+    width: .5rem !important;
+    background: linear-gradient (rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5))
 }
 
 .header-text {
-    margin-top: 5rem;
+    margin-top: 1rem;
     width: 100vh;
-    padding: 5rem;
+    padding: 1rem;
     height: 50vh;
+    text-align: center;
 }
 
 .header-text p {
@@ -134,7 +134,7 @@ hr {
 .bas-header {
     display: flex;
     justify-content: space-between;
-    margin: 3rem;
+    /* margin: 3rem; */
 }
 
 .social {
@@ -160,9 +160,12 @@ a {
     width: 2rem;
 
     hr {
-        border: 1px solid beige;
+        border: 2px solid white !important;
+        width: 1.5rem !important;
+        opacity: 1 !important;
     }
 }
+
 
 .scroll {
     transform: rotate(90deg) translateX(-55px) translateY(-7px);
@@ -219,9 +222,9 @@ h2 {
 .contenaire {
     display: flex;
     justify-content: space-between;
-    padding: 0 4rem;
+    padding: 0 2rem;
     align-items: center;
-    margin: 0 4rem;
+    margin: 0 2rem;
 
     .contain-img {
         max-width: 60vh;
@@ -299,13 +302,14 @@ p {
     }
 }
 
-.dashed {
+.deco {
     border-style: dotted none none;
-    width: 300px;
+    width: 300px !important;
     border-width: .4rem;
-    color: #F297C0;
-    /* padding: .2rem; */
+    color: #fb6eae;
     transform: translateX(-50px);
+    margin: .4rem;
+    opacity: 1 !important;
 }
 
 /* *************FOOTER*********************** */
@@ -330,6 +334,7 @@ footer {
     .content-footer {
         margin: 0 auto;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-around;
     }
 
@@ -366,5 +371,111 @@ footer {
 
     .IF {
         color: #DAB785;
+    }
+}
+
+
+
+/* //////////// MEDIA QUERIES ///////////////// */
+
+
+/* Pour les petits appareils X-Small  -> inférieur ou égal à 575px */
+@media(max-width:576px) {
+    body {
+        border: 3px solid #2846ee;
+
+        main {
+            margin: 0 !important;
+
+            h2 {
+                margin: .5rem;
+                font-size: 2rem 1rem;
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+            }
+
+            ul {
+                padding: 0 1rem !important;
+                margin: 0 .5rem !important;
+            }
+        }
+
+        /* M Q Section 1 */
+        section {
+            padding: 1rem 0;
+
+            .contenaire {
+                padding: 0 1rem !important;
+                margin: 0 !important;
+                display: block;
+                align-items: center;
+
+
+                .contain-img {
+                    max-width: 60vh;
+                    overflow: hidden;
+                    padding: 1rem;
+                    margin: 0 auto;
+
+                }
+
+                .our-classes {
+                    width: 85%;
+                    margin: 0 auto !important;
+                }
+            }
+        }
+
+        /* M Q Section 2 */
+
+        .global-contain {
+            display: block;
+            margin: 0 !important;
+
+            .Apropos {
+                padding: 1rem !important;
+                width: 85%;
+                margin: 0 auto !important;
+            }
+
+            .bloc-images {
+                margin: 0 auto;
+            }
+
+            .deco {
+                padding: 0 1rem;
+                margin: .4rem !important;
+                transform: translateX(-20px);
+            }
+        }
+
+        /* M Q Footer */
+        footer {
+            padding: 1rem;
+
+            .li-title {
+                padding: 1rem;
+            }
+
+            p {
+                margin-bottom: 0;
+            }
+
+            div {
+                padding: 0;
+            }
+
+            ul {
+                padding-left: 1.5rem;
+            }
+
+
+
+
+        }
+
     }
 }
